@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
 import Navbar from './components/Navbar';
 import HomePage from './routes/HomePage';
 import RecipePage from './routes/RecipePage';
@@ -11,11 +10,13 @@ import IngredientsPage from './routes/IngredientsPage';
 import LoginPage from './routes/LoginPage';
 import ProfilePage from './routes/ProfilePage';
 import EditProfilePage from './routes/EditProfilePage';
+import { ChakraProvider } from '@chakra-ui/react'
 
 import "./i18n";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
+<ChakraProvider>
     <Router>
       <Navbar />
       <Routes>
@@ -29,5 +30,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </Router>
+    </ChakraProvider>
   </React.StrictMode>,
 )

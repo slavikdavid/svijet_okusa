@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as ReactRouterLink } from "react-router-dom";
+import { Select, Heading, Link as ChakraLink} from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -7,34 +8,22 @@ const Navbar = () => {
 
     return (
         <div>
-        <h1>Navbar</h1>
-        <p>
-        <Link to="/">{t("homepage")}</Link>
-        </p>
-        <p>
-        <Link to="/recipe">{t("recipe")}</Link>
-        </p>
-        <p>
-        <Link to="/recipes">{t("recipes")}</Link>
-        </p>
-        <p>
-        <Link to="/ingredient">{t("ingredient")}</Link>
-        </p>
-        <p>
-        <Link to="/ingredients">{t("ingredients")}</Link>
-        </p>
-        <p>
-        <Link to="/login">{t("login")}</Link>
-        </p>
+        <Heading>Navbar</Heading>
+        <ChakraLink as = {ReactRouterLink} to="/">{t("homepage")}</ChakraLink>
+        <ChakraLink as = {ReactRouterLink} to="/recipe">{t("recipe")}</ChakraLink>
+        <ChakraLink as = {ReactRouterLink} to="/recipes">{t("recipes")}</ChakraLink>
+        <ChakraLink as = {ReactRouterLink} to="/ingredient">{t("ingredient")}</ChakraLink>
+        <ChakraLink as = {ReactRouterLink} to="/ingredients">{t("ingredients")}</ChakraLink>
+        <ChakraLink as = {ReactRouterLink} to="/login">{t("login")}</ChakraLink>
         <div>
-      <select
-        onChange={(e) => i18n.changeLanguage(e.target.value)}
-        value={i18n.language}
-      >
-        <option value="en">English</option>
-        <option value="sl">Slovenian</option>
-        <option value="hr">Croatian</option>
-      </select>
+        <Select
+      value={i18n.language}
+      onChange={(e) => i18n.changeLanguage(e.target.value)}
+    >
+      <option value="en">English</option>
+      <option value="sl">Slovenian</option>
+      <option value="hr">Croatian</option>
+    </Select>
     </div>
     </div>
     )

@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
+import { Heading } from '@chakra-ui/react'
 
 const IngredientsPage = () => {
     const { t } = useTranslation();
     return (
       <>
-        <h1>{t("ingredients")}</h1>
+        <Heading>{t("ingredients")}</Heading>
       </>
     )
   }
