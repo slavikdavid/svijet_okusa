@@ -15,6 +15,7 @@ import {
   MenuList,
   MenuItem,
   MenuDivider,
+  IconButton,
   useDisclosure,
   useColorModeValue,
   Stack,
@@ -22,7 +23,9 @@ import {
   Center,
 } from "@chakra-ui/react";
 
-import { Sun, Moon } from "lucide-react";
+import { Globe, Sun, Moon } from "lucide-react";
+
+import getUnicodeFlagIcon from "country-flag-icons/unicode";
 
 const Navbar = () => {
   const { i18n, t } = useTranslation();
@@ -64,18 +67,33 @@ const Navbar = () => {
                 </ChakraLink>
               </HStack>
 
-              <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <Moon size="32" /> : <Sun size="32" />}
-              </Button>
+              <Menu>
+                <MenuButton
+                  as={IconButton}
+                  aria-label="Options"
+                  icon={<Globe />}
+                />
+                <MenuList onClick={(e) => i18n.changeLanguage(e.target.value)}>
+                  <MenuItem
+                    value="en"
+                    onClick={(e) => i18n.changeLanguage(e.target.value)}
+                  >
+                    {getUnicodeFlagIcon("GB")} English
+                  </MenuItem>
+                  <MenuItem value="sl">
+                    <Text fontSize="">
+                      {getUnicodeFlagIcon("SI")} Slovenian
+                    </Text>
+                  </MenuItem>
+                  <MenuItem value="hr">
+                    {getUnicodeFlagIcon("HR")} Croatian
+                  </MenuItem>
+                </MenuList>
+              </Menu>
 
-              <Select
-                value={i18n.language}
-                onChange={(e) => i18n.changeLanguage(e.target.value)}
-              >
-                <option value="en">English</option>
-                <option value="sl">Slovenian</option>
-                <option value="hr">Croatian</option>
-              </Select>
+              <Button onClick={toggleColorMode}>
+                {colorMode === "light" ? <Moon size="24" /> : <Sun size="24" />}
+              </Button>
 
               <Menu>
                 <MenuButton
@@ -96,7 +114,7 @@ const Navbar = () => {
                   <br />
                   <Center>
                     <Avatar
-                      size={"2xl"}
+                      size={"xl"}
                       src={
                         "https://api.dicebear.com/7.x/fun-emoji/svg?seed=Buster"
                       }
