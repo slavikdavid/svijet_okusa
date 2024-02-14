@@ -1,32 +1,131 @@
 import React from "react";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Select, Heading, Link as ChakraLink} from "@chakra-ui/react";
+import { Select, Heading, Link as ChakraLink } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 
+import {
+  HStack,
+  Box,
+  Flex,
+  Avatar,
+  Text,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuDivider,
+  useDisclosure,
+  useColorModeValue,
+  Stack,
+  useColorMode,
+  Center,
+} from "@chakra-ui/react";
+
+import { Sun, Moon } from "lucide-react";
+
 const Navbar = () => {
-    const { i18n, t } = useTranslation();
+  const { i18n, t } = useTranslation();
+
+  const NavLink = (props) => {
+    const { children } = props;
 
     return (
-        <div>
-        <Heading>Navbar</Heading>
-        <ChakraLink as = {ReactRouterLink} to="/">{t("homepage")}</ChakraLink>
-        <ChakraLink as = {ReactRouterLink} to="/recipe">{t("recipe")}</ChakraLink>
-        <ChakraLink as = {ReactRouterLink} to="/recipes">{t("recipes")}</ChakraLink>
-        <ChakraLink as = {ReactRouterLink} to="/ingredient">{t("ingredient")}</ChakraLink>
-        <ChakraLink as = {ReactRouterLink} to="/ingredients">{t("ingredients")}</ChakraLink>
-        <ChakraLink as = {ReactRouterLink} to="/login">{t("login")}</ChakraLink>
-        <div>
-        <Select
-      value={i18n.language}
-      onChange={(e) => i18n.changeLanguage(e.target.value)}
-    >
-      <option value="en">English</option>
-      <option value="sl">Slovenian</option>
-      <option value="hr">Croatian</option>
-    </Select>
-    </div>
-    </div>
-    )
-}
+      <Box
+        as="a"
+        px={2}
+        py={1}
+        rounded={"md"}
+        _hover={{
+          textDecoration: "none",
+          bg: useColorModeValue("gray.200", "gray.700"),
+        }}
+        href={"#"}
+      >
+        {children}
+      </Box>
+    );
+  };
 
-export default Navbar
+  const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  return (
+    <>
+      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+          <Box>Logo</Box>
+
+          <Flex alignItems={"center"}>
+            <Stack direction={"row"} spacing={7}>
+              <HStack>
+                <ChakraLink as={ReactRouterLink} to="/my-recipes">
+                  {t("myrecipes")}
+                </ChakraLink>
+              </HStack>
+
+              <Button onClick={toggleColorMode}>
+                {colorMode === "light" ? <Moon size="32" /> : <Sun size="32" />}
+              </Button>
+
+              <Select
+                value={i18n.language}
+                onChange={(e) => i18n.changeLanguage(e.target.value)}
+              >
+                <option value="en">English</option>
+                <option value="sl">Slovenian</option>
+                <option value="hr">Croatian</option>
+              </Select>
+
+              <Menu>
+                <MenuButton
+                  as={Button}
+                  rounded={"full"}
+                  variant={"link"}
+                  cursor={"pointer"}
+                  minW={0}
+                >
+                  <Avatar
+                    size={"sm"}
+                    src={
+                      "https://api.dicebear.com/7.x/fun-emoji/svg?seed=Buster"
+                    }
+                  />
+                </MenuButton>
+                <MenuList alignItems={"center"}>
+                  <br />
+                  <Center>
+                    <Avatar
+                      size={"2xl"}
+                      src={
+                        "https://api.dicebear.com/7.x/fun-emoji/svg?seed=Buster"
+                      }
+                    />
+                  </Center>
+                  <br />
+                  <Center>
+                    <p>Username</p>
+                  </Center>
+                  <br />
+                  <MenuDivider />
+                  <MenuItem>
+                    <ChakraLink as={ReactRouterLink} to="/edit-profile">
+                      {t("editprofile")}
+                    </ChakraLink>
+                  </MenuItem>
+                  <MenuItem>
+                    <ChakraLink as={ReactRouterLink} to="/logout">
+                      {t("logout")}
+                    </ChakraLink>
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </Stack>
+          </Flex>
+        </Flex>
+      </Box>
+    </>
+  );
+};
+
+export default Navbar;
