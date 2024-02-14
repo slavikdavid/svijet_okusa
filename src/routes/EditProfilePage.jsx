@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
+import { Heading } from '@chakra-ui/react'
 
 const EditProfilePage = () => {
     const { t } = useTranslation();
     return (
       <>
-        <h1>{t("editprofile")}</h1>
+        <Heading>{t("editprofile")}</Heading>
       </>
     )
   }
