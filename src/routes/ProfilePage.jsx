@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const ProfilePage = () => {
+    const { t } = useTranslation();
     return (
       <>
-        <h1>Profile Page</h1>
+        <h1>{t("profile")}</h1>
       </>
     )
   }

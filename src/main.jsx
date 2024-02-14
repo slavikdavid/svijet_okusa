@@ -12,6 +12,8 @@ import LoginPage from './routes/LoginPage';
 import ProfilePage from './routes/ProfilePage';
 import EditProfilePage from './routes/EditProfilePage';
 
+import "./i18n";
+
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
     <Router>

@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const LoginPage = () => {
+    const { t } = useTranslation();
     return (
       <>
-        <h1>Login Page</h1>
+        <h1>{t("login")}</h1>
       </>
     )
   }

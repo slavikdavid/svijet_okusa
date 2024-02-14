@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const RecipesPage = () => {
+    const { t } = useTranslation();
     return (
       <>
-        <h1>Recipes Page</h1>
+        <h1>{t("recipes")}</h1>
       </>
     )
   }
