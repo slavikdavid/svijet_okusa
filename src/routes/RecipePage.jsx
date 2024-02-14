@@ -4,7 +4,7 @@ const RecipePage = () => {
     const { t } = useTranslation();
     return (
       <>
-        <h1>{t("recipe")} Page</h1>
+        <h1>{t("recipe")}</h1>
       </>
     )
   }

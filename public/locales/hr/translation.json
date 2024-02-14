@@ -6,5 +6,8 @@
     "recipe": "Recept",
     "recipes": "Recepti",
     "ingredient": "Sastojak",
-    "ingredients": "Sastojci"
+    "ingredients": "Sastojci",
+    "homepage": "Početna stranica",
+    "profile": "Profil",
+    "editprofile": "Uredi profil"
 }

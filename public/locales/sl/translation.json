@@ -6,5 +6,8 @@
     "recipe": "Recept",
     "recipes": "Recepti",
     "ingredient": "Sestavina",
-    "ingredients": "Sestavine"
+    "ingredients": "Sestavine",
+    "homepage": "Domača stran",
+    "profile": "Profil",
+    "editprofile": "Uredi profil"
 }

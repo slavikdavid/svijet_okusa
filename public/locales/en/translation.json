@@ -6,5 +6,8 @@
     "recipe": "Recipe",
     "recipes": "Recipes",
     "ingredient": "Ingredient",
-    "ingredients": "Ingredients"
+    "ingredients": "Ingredients",
+    "homepage": "Home Page",
+    "profile": "Profile",
+    "editprofile": "Edit Profile"
 }

@@ -3,28 +3,28 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
-    const { i18n } = useTranslation();
+    const { i18n, t } = useTranslation();
 
     return (
         <div>
         <h1>Navbar</h1>
         <p>
-        <Link to="/">Home</Link>
+        <Link to="/">{t("homepage")}</Link>
         </p>
         <p>
-        <Link to="/recipe">Recipe (individual)</Link>
+        <Link to="/recipe">{t("recipe")}</Link>
         </p>
         <p>
-        <Link to="/recipes">Recipes</Link>
+        <Link to="/recipes">{t("recipes")}</Link>
         </p>
         <p>
-        <Link to="/ingredient">Ingredient (individual)</Link>
+        <Link to="/ingredient">{t("ingredient")}</Link>
         </p>
         <p>
-        <Link to="/ingredients">Ingredients</Link>
+        <Link to="/ingredients">{t("ingredients")}</Link>
         </p>
         <p>
-        <Link to="/login">Login</Link>
+        <Link to="/login">{t("login")}</Link>
         </p>
         <div>
       <select
