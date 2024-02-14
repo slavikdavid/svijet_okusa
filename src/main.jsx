@@ -9,6 +9,8 @@ import RecipesPage from './routes/RecipesPage';
 import IngredientPage from './routes/IngredientPage';
 import IngredientsPage from './routes/IngredientsPage';
 import LoginPage from './routes/LoginPage';
+import ProfilePage from './routes/ProfilePage';
+import EditProfilePage from './routes/EditProfilePage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
@@ -21,6 +23,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/ingredient" element={<IngredientPage />} />
         <Route path="/ingredients" element={<IngredientsPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/edit-profile" element={<EditProfilePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </Router>
   </React.StrictMode>,
