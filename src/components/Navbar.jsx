@@ -1,7 +1,10 @@
 import React from "react";
-import { Link, Route, Routes} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
+    const { i18n } = useTranslation();
+
     return (
         <div>
         <h1>Navbar</h1>
@@ -23,6 +26,16 @@ const Navbar = () => {
         <p>
         <Link to="/login">Login</Link>
         </p>
+        <div>
+      <select
+        onChange={(e) => i18n.changeLanguage(e.target.value)}
+        value={i18n.language}
+      >
+        <option value="en">English</option>
+        <option value="sl">Slovenian</option>
+        <option value="hr">Croatian</option>
+      </select>
+    </div>
     </div>
     )
 }
