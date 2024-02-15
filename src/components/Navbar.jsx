@@ -80,7 +80,7 @@ const Navbar = () => {
                   >
                     {getUnicodeFlagIcon("GB")} English
                   </MenuItem>
-                  <MenuItem value="sl">
+                  <MenuItem value="si">
                     <Text fontSize="">
                       {getUnicodeFlagIcon("SI")} Slovenian
                     </Text>
