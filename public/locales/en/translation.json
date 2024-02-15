@@ -19,6 +19,8 @@
   "homepage_greeting": "What will you prepare today",
   "preparation_time": "Preparation time",
   "advanced_search": "Advanced",
+  "homepage_search_prompt": "Enter your search prompt...",
+  "search": "Search",
 
   "currently_in_season": "Currently in season",
   "categories": "Categories",
