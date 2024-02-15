@@ -1,15 +1,15 @@
 {
-  "hello": "Bok",
+  "hello": "Zdravo",
   "login": "Prijava",
   "logout": "Odjava",
-  "cancel": "Poništi",
-  "continue": "Nastavi",
+  "cancel": "Prekliči",
+  "continue": "Nadaljuj",
   "recipe": "Recept",
   "recipes": "Recepti",
   "my-recipes": "Moji recepti",
-  "ingredient": "Sastojak",
-  "ingredients": "Sastojci",
-  "homepage": "Početna stranica",
+  "ingredient": "Sestavina",
+  "ingredients": "Sestavine",
+  "homepage": "Domača stran",
   "profile": "Profil",
   "editprofile": "Uredi profil"
 }
