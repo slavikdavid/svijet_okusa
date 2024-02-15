@@ -63,7 +63,7 @@ const Navbar = () => {
             <Stack direction={"row"} spacing={7}>
               <HStack>
                 <ChakraLink as={ReactRouterLink} to="/my-recipes">
-                  {t("myrecipes")}
+                  {t("my-recipes")}
                 </ChakraLink>
               </HStack>
 
