@@ -33,18 +33,18 @@ const HomePage = () => {
     <>
       <Container p={5} maxW={800}>
         <Stack my={8}>
-          <Heading>Hello 'user'!</Heading>
-          <Heading size="md">What will you prepare today?</Heading>
+          <Heading>{t("hello")} 'user'!</Heading>
+          <Heading size="md">{t("homepage_greeting")}?</Heading>
         </Stack>
 
         <InputGroup>
           <InputLeftElement pointerEvents="none">
             <SearchIcon color="black" />
           </InputLeftElement>
-          <Input placeholder="Enter search prompt..." />
+          <Input placeholder={t("homepage_search_prompt")} />
           <InputRightElement minWidth="8.5rem">
             <Button colorScheme="red" w="100%">
-              Search
+              {t("search")}
             </Button>
           </InputRightElement>
         </InputGroup>
@@ -55,7 +55,7 @@ const HomePage = () => {
               <MenuButton as={Button} textAlign="center" w="100%">
                 <HStack spacing={2}>
                   <CarrotIcon />
-                  <Text>Ingredients</Text>
+                  <Text>{t("ingredients")}</Text>
                 </HStack>
               </MenuButton>
               <MenuList>
@@ -68,7 +68,7 @@ const HomePage = () => {
               <MenuButton as={Button} textAlign="center" w="100%">
                 <HStack spacing={2}>
                   <TimerIcon />
-                  <Text>Preparation time</Text>
+                  <Text>{t("preparation_time")}</Text>
                 </HStack>
               </MenuButton>
               <MenuList>
@@ -81,7 +81,7 @@ const HomePage = () => {
               <MenuButton as={Button} textAlign="center" w="100%">
                 <HStack spacing={2}>
                   <SlidersHorizontalIcon />
-                  <Text>Advanced</Text>
+                  <Text>{t("advanced_search")}</Text>
                 </HStack>
               </MenuButton>
               <MenuList>
@@ -91,7 +91,7 @@ const HomePage = () => {
           </GridItem>
         </Grid>
 
-        <Heading mt={12}>Currently in season</Heading>
+        <Heading mt={12}>{t("currently_in_season")}</Heading>
 
         <Grid templateColumns="repeat(5, 1fr)" gap={4} my={6}>
           <GridItem rounded="xl" h="40" bg="gray.100">
@@ -131,11 +131,11 @@ const HomePage = () => {
             bg="gray.100
 "
           >
-            <Center>All ingredients</Center>
+            <Center>{t("all_ingredients")}</Center>
           </GridItem>
         </Grid>
 
-        <Heading mt={12}>Categories</Heading>
+        <Heading mt={12}>{t("categories")}</Heading>
 
         <Grid
           templateRows="repeat(2, 1fr)"
@@ -220,11 +220,11 @@ const HomePage = () => {
             bg="gray.100
 "
           >
-            <Center>All categories</Center>
+            <Center>{t("all_categories")}</Center>
           </GridItem>
         </Grid>
 
-        <Heading mt={12}>Featured recipes</Heading>
+        <Heading mt={12}>{t("featured_recipes")}</Heading>
 
         <Grid
           templateRows="repeat(2, 1fr)"
@@ -309,11 +309,11 @@ const HomePage = () => {
             bg="gray.100
 "
           >
-            <Center>All recipes</Center>
+            <Center>{t("all_recipes")}</Center>
           </GridItem>
         </Grid>
 
-        <Heading mt={12}>Newest recipes</Heading>
+        <Heading mt={12}>{t("newest_recipes")}</Heading>
 
         <Grid
           templateRows="repeat(3, 1fr)"
@@ -442,7 +442,7 @@ const HomePage = () => {
             bg="gray.100
 "
           >
-            <Center>All recipes</Center>
+            <Center>{t("all_recipes")}</Center>
           </GridItem>
         </Grid>
       </Container>
