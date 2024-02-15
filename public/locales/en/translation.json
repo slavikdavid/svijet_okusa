@@ -1,4 +1,7 @@
 {
+  "english": "English",
+  "croatian": "Croatian",
+  "slovenian": "Slovenian",
   "hello": "Hello",
   "login": "Login",
   "logout": "Logout",
