@@ -19,6 +19,8 @@
   "homepage_greeting": "Što ćeš spremiti danas",
   "preparation_time": "Vrijeme pripreme",
   "advanced_search": "Napredno",
+  "homepage_search_prompt": "Unesite pojam pretraživanja...",
+  "search": "Pretraži",
 
   "currently_in_season": "Trenutno u sezoni",
   "categories": "Kategorije",
