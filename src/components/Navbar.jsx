@@ -78,15 +78,15 @@ const Navbar = () => {
                     value="en"
                     onClick={(e) => i18n.changeLanguage(e.target.value)}
                   >
-                    {getUnicodeFlagIcon("GB")} English
+                    {getUnicodeFlagIcon("GB")} {t("english")}
                   </MenuItem>
                   <MenuItem value="si">
                     <Text fontSize="">
-                      {getUnicodeFlagIcon("SI")} Slovenian
+                      {getUnicodeFlagIcon("SI")} {t("slovenian")}
                     </Text>
                   </MenuItem>
                   <MenuItem value="hr">
-                    {getUnicodeFlagIcon("HR")} Croatian
+                    {getUnicodeFlagIcon("HR")} {t("croatian")}
                   </MenuItem>
                 </MenuList>
               </Menu>
