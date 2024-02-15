@@ -93,7 +93,7 @@ const HomePage = () => {
 
         <Heading mt={12}>Currently in season</Heading>
 
-        <Grid templateColumns="repeat(4, 1fr)" gap={4} my={6}>
+        <Grid templateColumns="repeat(5, 1fr)" gap={4} my={6}>
           <GridItem rounded="xl" h="40" bg="gray.100">
             <Center>
               <Spinner my={50} size="xl" />
@@ -123,6 +123,15 @@ const HomePage = () => {
             <Center>
               <Spinner my={50} size="xl" />
             </Center>
+          </GridItem>
+
+          <GridItem
+            rounded="xl"
+            h="10"
+            bg="gray.100
+"
+          >
+            <Center>All ingredients</Center>
           </GridItem>
         </Grid>
 
