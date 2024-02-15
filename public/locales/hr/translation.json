@@ -10,9 +10,22 @@
   "recipe": "Recept",
   "recipes": "Recepti",
   "my-recipes": "Moji recepti",
-  "ingredient": "Sastojak",
-  "ingredients": "Sastojci",
+  "ingredient": "Namirnica",
+  "ingredients": "Namirnice",
   "homepage": "Početna stranica",
   "profile": "Profil",
-  "editprofile": "Uredi profil"
+  "editprofile": "Uredi profil",
+
+  "homepage_greeting": "Što ćeš spremiti danas",
+  "preparation_time": "Vrijeme pripreme",
+  "advanced_search": "Napredno",
+
+  "currently_in_season": "Trenutno u sezoni",
+  "categories": "Kategorije",
+  "featured_recipes": "Izdvojeni recepti",
+  "newest_recipes": "Najnoviji recepti",
+
+  "all_recipes": "Svi recepti",
+  "all_categories": "Sve kategorije",
+  "all_ingredients": "Sve namirnice"
 }
