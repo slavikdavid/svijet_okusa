@@ -1,13 +1,15 @@
 {
-    "hello": "Hello",
-    "login": "Login",
-    "cancel": "Cancel",
-    "continue": "Continue",
-    "recipe": "Recipe",
-    "recipes": "Recipes",
-    "ingredient": "Ingredient",
-    "ingredients": "Ingredients",
-    "homepage": "Home Page",
-    "profile": "Profile",
-    "editprofile": "Edit Profile"
+  "hello": "Hello",
+  "login": "Login",
+  "logout": "Logout",
+  "cancel": "Cancel",
+  "continue": "Continue",
+  "recipe": "Recipe",
+  "recipes": "Recipes",
+  "my-recipes": "My Recipes",
+  "ingredient": "Ingredient",
+  "ingredients": "Ingredients",
+  "homepage": "Home Page",
+  "profile": "Profile",
+  "editprofile": "Edit Profile"
 }
