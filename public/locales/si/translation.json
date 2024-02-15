@@ -2,6 +2,7 @@
   "english": "Angleščina",
   "croatian": "Hrvaški",
   "slovenian": "Slovenski",
+
   "hello": "Zdravo",
   "login": "Prijava",
   "logout": "Odjava",
@@ -10,9 +11,22 @@
   "recipe": "Recept",
   "recipes": "Recepti",
   "my-recipes": "Moji recepti",
-  "ingredient": "Sestavina",
-  "ingredients": "Sestavine",
+  "ingredient": "Živil",
+  "ingredients": "Živila",
   "homepage": "Domača stran",
   "profile": "Profil",
-  "editprofile": "Uredi profil"
+  "editprofile": "Uredi profil",
+
+  "homepage_greeting": "Kaj boš pripravil danes",
+  "preparation_time": "Čas priprave",
+  "advanced_search": "Napredno",
+
+  "currently_in_season": "Trenutno v sezoni",
+  "categories": "Kategorije",
+  "featured_recipes": "Predstavljeni recepti",
+  "newest_recipes": "Najnovejši recepti",
+
+  "all_recipes": "Vsi recepti",
+  "all_categories": "Vse kategorije",
+  "all_ingredients": "Vsa živila"
 }

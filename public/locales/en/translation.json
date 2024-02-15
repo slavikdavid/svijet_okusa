@@ -14,5 +14,18 @@
   "ingredients": "Ingredients",
   "homepage": "Home Page",
   "profile": "Profile",
-  "editprofile": "Edit Profile"
+  "editprofile": "Edit Profile",
+
+  "homepage_greeting": "What will you prepare today",
+  "preparation_time": "Preparation time",
+  "advanced_search": "Advanced",
+
+  "currently_in_season": "Currently in season",
+  "categories": "Categories",
+  "featured_recipes": "Featured recipes",
+  "newest_recipes": "Newest recipes",
+
+  "all_recipes": "All recipes",
+  "all_categories": "All categories",
+  "all_ingredients": "All ingredients"
 }
