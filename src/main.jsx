@@ -10,6 +10,8 @@ import IngredientsPage from "./routes/IngredientsPage";
 import LoginPage from "./routes/LoginPage";
 import ProfilePage from "./routes/ProfilePage";
 import EditProfilePage from "./routes/EditProfilePage";
+import MyRecipesPage from "./routes/MyRecipesPage";
+
 import { ChakraProvider } from "@chakra-ui/react";
 
 import "./i18n";
@@ -23,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/" element={<HomePage />} />
           <Route path="/recipe" element={<RecipePage />} />
           <Route path="/recipes" element={<RecipesPage />} />
+          <Route path="/my-recipes" element={<MyRecipesPage />} />
           <Route path="/ingredient" element={<IngredientPage />} />
           <Route path="/ingredients" element={<IngredientsPage />} />
           <Route path="/login" element={<LoginPage />} />
