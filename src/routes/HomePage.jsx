@@ -81,7 +81,7 @@ const HomePage = () => {
               <MenuButton as={Button} textAlign="center" w="100%">
                 <HStack spacing={2}>
                   <SlidersHorizontalIcon />
-                  <Text>Detailed</Text>
+                  <Text>Advanced</Text>
                 </HStack>
               </MenuButton>
               <MenuList>
