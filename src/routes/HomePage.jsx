@@ -300,7 +300,7 @@ const HomePage = () => {
             bg="gray.100
 "
           >
-            <Center>All categories</Center>
+            <Center>All recipes</Center>
           </GridItem>
         </Grid>
 
@@ -433,7 +433,7 @@ const HomePage = () => {
             bg="gray.100
 "
           >
-            <Center>All categories</Center>
+            <Center>All recipes</Center>
           </GridItem>
         </Grid>
       </Container>
