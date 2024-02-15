@@ -63,7 +63,7 @@ const Navbar = () => {
             <Stack direction={"row"} spacing={7}>
               <HStack>
                 <ChakraLink as={ReactRouterLink} to="/my-recipes">
-                  {t("myrecipes")}
+                  {t("my-recipes")}
                 </ChakraLink>
               </HStack>
 
@@ -80,7 +80,7 @@ const Navbar = () => {
                   >
                     {getUnicodeFlagIcon("GB")} English
                   </MenuItem>
-                  <MenuItem value="sl">
+                  <MenuItem value="si">
                     <Text fontSize="">
                       {getUnicodeFlagIcon("SI")} Slovenian
                     </Text>
