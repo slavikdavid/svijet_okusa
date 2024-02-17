@@ -19,6 +19,7 @@ import {
   MenuList,
   Spinner,
   MenuItem,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import {
   SearchIcon,
@@ -39,9 +40,12 @@ const HomePage = () => {
 
         <InputGroup>
           <InputLeftElement pointerEvents="none">
-            <SearchIcon color="black" />
+            <SearchIcon />
           </InputLeftElement>
-          <Input placeholder={t("homepage_search_prompt")} />
+          <Input
+            bg={useColorModeValue("gray.100", "gray.700")}
+            placeholder={t("homepage_search_prompt")}
+          />
           <InputRightElement minWidth="8.5rem">
             <Button colorScheme="red" w="100%">
               {t("search")}
@@ -94,21 +98,10 @@ const HomePage = () => {
         <Heading mt={12}>{t("currently_in_season")}</Heading>
 
         <Grid templateColumns="repeat(5, 1fr)" gap={4} my={6}>
-          <GridItem rounded="xl" h="40" bg="gray.100">
-            <Center>
-              <Spinner my={50} size="xl" />
-            </Center>
-          </GridItem>
-          <GridItem rounded="xl" h="40" bg="gray.100">
-            <Center>
-              <Spinner my={50} size="xl" />
-            </Center>
-          </GridItem>
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -117,8 +110,25 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
+          >
+            <Center>
+              <Spinner my={50} size="xl" />
+            </Center>
+          </GridItem>
+          <GridItem
+            rounded="xl"
+            h="40"
+            bg={useColorModeValue("gray.100", "gray.700")}
+          >
+            <Center>
+              <Spinner my={50} size="xl" />
+            </Center>
+          </GridItem>
+          <GridItem
+            rounded="xl"
+            h="40"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -128,8 +138,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="10"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>{t("all_ingredients")}</Center>
           </GridItem>
@@ -146,8 +155,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -156,8 +164,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -166,8 +173,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -176,8 +182,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -186,8 +191,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -196,8 +200,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -206,8 +209,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -217,8 +219,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="10"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>{t("all_categories")}</Center>
           </GridItem>
@@ -235,8 +236,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -245,8 +245,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -255,8 +254,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -265,8 +263,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -275,8 +272,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -285,8 +281,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -295,8 +290,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -306,8 +300,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="10"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>{t("all_recipes")}</Center>
           </GridItem>
@@ -324,8 +317,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -334,8 +326,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -344,8 +335,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -354,8 +344,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -364,8 +353,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -374,8 +362,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -384,8 +371,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -395,8 +381,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -406,8 +391,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -417,8 +401,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -428,8 +411,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="40"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>
               <Spinner my={50} size="xl" />
@@ -439,8 +421,7 @@ const HomePage = () => {
           <GridItem
             rounded="xl"
             h="10"
-            bg="gray.100
-"
+            bg={useColorModeValue("gray.100", "gray.700")}
           >
             <Center>{t("all_recipes")}</Center>
           </GridItem>
