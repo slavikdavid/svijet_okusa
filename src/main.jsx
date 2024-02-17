@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import HomePage from "./routes/HomePage";
 import RecipePage from "./routes/RecipePage";
@@ -20,8 +25,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider>
       <Router>
-        <Navbar />
         <Routes>
+          {({ location }) => {
+            if (location.pathname !== "/login") {
+              return <Navbar />;
+            }
+            return null;
+          }}
           <Route path="/" element={<HomePage />} />
           <Route path="/recipe/:id" element={<RecipePage />} />
           <Route path="/recipes" element={<RecipesPage />} />
