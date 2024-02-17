@@ -23,10 +23,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/recipe" element={<RecipePage />} />
+          <Route path="/recipe/:id" element={<RecipePage />} />
           <Route path="/recipes" element={<RecipesPage />} />
           <Route path="/my-recipes" element={<MyRecipesPage />} />
-          <Route path="/ingredient" element={<IngredientPage />} />
+          <Route path="/ingredient/:id" element={<IngredientPage />} />
           <Route path="/ingredients" element={<IngredientsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/edit-profile" element={<EditProfilePage />} />
