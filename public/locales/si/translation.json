@@ -30,5 +30,18 @@
 
   "all_recipes": "Vsi recepti",
   "all_categories": "Vse kategorije",
-  "all_ingredients": "Vsa živila"
+  "all_ingredients": "Vsa živila",
+
+  "required": "Obvezno",
+  "invalid_email": "Neveljaven e-poštni naslov",
+  "password_length": "Geslo mora vsebovati vsaj 6 znakov",
+  "passwords_do_not_match": "Gesli se ne ujemata",
+  "email_label": "E-poštni naslov",
+  "password_label": "Geslo",
+  "confirm_password_label": "Potrdi geslo",
+  "remember_me_label": "Zapomni si me",
+  "register_button": "Registracija",
+  "login_button": "Prijava",
+  "already_have_account": "Že imate račun? Prijava",
+  "create_an_account": "Ustvari račun"
 }

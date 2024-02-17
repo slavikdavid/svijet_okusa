@@ -29,5 +29,18 @@
 
   "all_recipes": "Svi recepti",
   "all_categories": "Sve kategorije",
-  "all_ingredients": "Sve namirnice"
+  "all_ingredients": "Sve namirnice",
+
+  "required": "Obavezno",
+  "invalid_email": "Neispravna e-mail adresa",
+  "password_length": "Lozinka mora imati barem 6 znakova",
+  "passwords_do_not_match": "Lozinke se ne podudaraju",
+  "email_label": "E-mail adresa",
+  "password_label": "Lozinka",
+  "confirm_password_label": "Potvrdi lozinku",
+  "remember_me_label": "Zapamti me",
+  "register_button": "Registracija",
+  "login_button": "Prijava",
+  "already_have_account": "Već imate račun? Prijavite se",
+  "create_an_account": "Napravite račun"
 }
