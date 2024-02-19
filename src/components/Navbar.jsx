@@ -74,10 +74,7 @@ const Navbar = () => {
                   icon={<Globe />}
                 />
                 <MenuList onClick={(e) => i18n.changeLanguage(e.target.value)}>
-                  <MenuItem
-                    value="en"
-                    onClick={(e) => i18n.changeLanguage(e.target.value)}
-                  >
+                  <MenuItem value="en">
                     {getUnicodeFlagIcon("GB")} {t("english")}
                   </MenuItem>
                   <MenuItem value="si">
