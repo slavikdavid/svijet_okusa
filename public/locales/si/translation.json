@@ -43,5 +43,8 @@
   "register_button": "Registracija",
   "login_button": "Prijava",
   "already_have_account": "Že imate račun? Prijava",
-  "create_an_account": "Ustvari račun"
+  "create_an_account": "Ustvari račun",
+
+  "top_recipes_by_ingredient": "Najboljši recepti, ki vsebujejo to živilo",
+  "newest_recipes_by_ingredient": "Najnovejši recepti, ki vsebujejo to živilo"
 }

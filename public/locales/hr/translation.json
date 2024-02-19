@@ -42,5 +42,8 @@
   "register_button": "Registracija",
   "login_button": "Prijava",
   "already_have_account": "Već imate račun? Prijavite se",
-  "create_an_account": "Napravite račun"
+  "create_an_account": "Napravite račun",
+
+  "top_recipes_by_ingredient": "Najbolje ocijenjeni recepti s ovom namirnicom",
+  "newest_recipes_by_ingredient": "Najnoviji recepti s ovom namirnicom"
 }
