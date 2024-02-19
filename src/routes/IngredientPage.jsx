@@ -29,11 +29,13 @@ const IngredientPage = () => {
       <Container p={5} maxW={800}>
         <Breadcrumb my={1} mb={6} spacing="8px" separator={<ChevronRight />}>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">{t("homepage")}</BreadcrumbLink>
+            <BreadcrumbLink href="/">{t("homepage")}</BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">{t("ingredients")}</BreadcrumbLink>
+            <BreadcrumbLink href="/ingredients">
+              {t("ingredients")}
+            </BreadcrumbLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem isCurrentPage>
