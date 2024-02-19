@@ -42,5 +42,8 @@
   "register_button": "Register",
   "login_button": "Login",
   "already_have_account": "Already have an account? Login",
-  "create_an_account": "Create an account"
+  "create_an_account": "Create an account",
+
+  "top_recipes_by_ingredient": "Top recipes that include this ingredient",
+  "newest_recipes_by_ingredient": "Newest recipes that include this ingredient"
 }
