@@ -28,53 +28,64 @@ export default function App() {
         <Formik
           initialValues={{
             email: "",
+            username: "",
             password: "",
             confirmPassword: "",
             rememberMe: false,
           }}
           validate={(values) => {
             const errors = {};
-            if (!values.email) {
+            if (!values.email && !values.username) {
               errors.email = t("required");
-            } else if (
-              !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-            ) {
-              errors.email = t("invalid_email");
-            }
-            if (!values.password) {
-              errors.password = t("required");
-            } else if (values.password.length < 6) {
-              errors.password = t("password_length");
-            }
-            if (isRegister && values.password !== values.confirmPassword) {
-              errors.confirmPassword = t("passwords_do_not_match");
+              errors.username = t("required");
             }
             return errors;
           }}
           onSubmit={(values) => {
-            alert(JSON.stringify(values, null, 2));
+            if (isRegister) {
+              console.log("Registering with: ", values);
+            } else {
+              console.log("Logging in with: ", values);
+            }
           }}
         >
           {({ handleSubmit, errors, touched }) => (
             <form onSubmit={handleSubmit}>
               <VStack spacing={4} align="flex-start">
                 <FormControl>
-                  <FormLabel htmlFor="email">{t("email_label")}</FormLabel>{" "}
-                  {/*  */}
+                  <FormLabel htmlFor="email">
+                    {isRegister
+                      ? t("email_label")
+                      : `${t("email_label")}/${t("username_label")}`}
+                  </FormLabel>{" "}
                   <Field
                     as={Input}
                     id="email"
                     name="email"
-                    type="email"
+                    type="text"
                     variant="filled"
                   />
                   <FormErrorMessage>{errors.email}</FormErrorMessage>
                 </FormControl>
+                {isRegister && (
+                  <FormControl>
+                    <FormLabel htmlFor="username">
+                      {t("username_label")}
+                    </FormLabel>{" "}
+                    <Field
+                      as={Input}
+                      id="username"
+                      name="username"
+                      type="text"
+                      variant="filled"
+                    />
+                    <FormErrorMessage>{errors.username}</FormErrorMessage>
+                  </FormControl>
+                )}
                 <FormControl isInvalid={!!errors.password && touched.password}>
                   <FormLabel htmlFor="password">
                     {t("password_label")}
                   </FormLabel>{" "}
-                  {/*  */}
                   <Field
                     as={Input}
                     id="password"
@@ -93,7 +104,6 @@ export default function App() {
                     <FormLabel htmlFor="confirmPassword">
                       {t("confirm_password_label")}
                     </FormLabel>{" "}
-                    {/*  */}
                     <Field
                       as={Input}
                       id="confirmPassword"
@@ -107,11 +117,10 @@ export default function App() {
                   </FormControl>
                 )}
                 <Field as={Checkbox} id="rememberMe" name="rememberMe">
-                  {t("remember_me_label")} {/*  */}
+                  {t("remember_me_label")}
                 </Field>
                 <Button type="submit" colorScheme="orange" width="full">
-                  {isRegister ? t("register_button") : t("login_button")}{" "}
-                  {/*  */}
+                  {isRegister ? t("register_button") : t("login_button")}
                 </Button>
               </VStack>
             </form>
@@ -122,8 +131,7 @@ export default function App() {
           variant="link"
           onClick={() => setIsRegister(!isRegister)}
         >
-          {isRegister ? t("already_have_account") : t("create_an_account")}{" "}
-          {/*  */}
+          {isRegister ? t("already_have_account") : t("create_an_account")}
         </Button>
       </Box>
     </Flex>
