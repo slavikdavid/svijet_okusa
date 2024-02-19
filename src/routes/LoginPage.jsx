@@ -13,6 +13,7 @@ import {
   FormErrorMessage,
   Input,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 
 export default function App() {
@@ -20,8 +21,13 @@ export default function App() {
   const [isRegister, setIsRegister] = useState(false);
 
   return (
-    <Flex bg="gray.100" align="center" justify="center" h="100vh">
-      <Box bg="white" p={6} rounded="md" w={72}>
+    <Flex align="center" justify="center" h="100vh">
+      <Box
+        bg={useColorModeValue("gray.50", "gray.700")}
+        p={6}
+        rounded="md"
+        w={72}
+      >
         <Center>
           <Heading p={6}>{t("login")}</Heading>
         </Center>
