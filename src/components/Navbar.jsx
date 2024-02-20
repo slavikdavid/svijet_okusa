@@ -55,8 +55,22 @@ const Navbar = () => {
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
+      <Box
+        w="full"
+        position={"fixed"}
+        zIndex={"1"}
+        bg={useColorModeValue("gray.100", "gray.900")}
+        px={4}
+      >
+        <Flex
+          h={16}
+          position="static"
+          align="center"
+          pos="relative"
+          justify="center"
+          alignItems={"center"}
+          justifyContent={"space-between"}
+        >
           <Box>Logo</Box>
 
           <Flex alignItems={"center"}>
@@ -74,10 +88,7 @@ const Navbar = () => {
                   icon={<Globe />}
                 />
                 <MenuList onClick={(e) => i18n.changeLanguage(e.target.value)}>
-                  <MenuItem
-                    value="en"
-                    onClick={(e) => i18n.changeLanguage(e.target.value)}
-                  >
+                  <MenuItem value="en">
                     {getUnicodeFlagIcon("GB")} {t("english")}
                   </MenuItem>
                   <MenuItem value="si">
